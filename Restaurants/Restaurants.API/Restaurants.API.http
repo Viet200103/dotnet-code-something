@@ -1,0 +1,38 @@
+@Restaurants.API_HostAddress = https://localhost:7018
+
+GET https://localhost:7018/api/restaurants
+
+###
+
+GET https://localhost:7018/api/restaurants/1
+
+###
+
+POST https://localhost:7018/api/restaurants
+Content-Type: application/json
+{
+      "Name": "Owner2 restaurant2",
+      "Description": "A cozy restaurant serving a variety of delicious dishes.",
+      "Category": "Indian",
+      "HasDelivery": true,
+      "ContactEmail": "info@test.com",
+      "ContactNumber": "555-1234",
+      "City": "New York",
+      "Street": "123 Main Street",
+      "PostalCode": "10-010"
+}
+
+###
+POST https://localhost:7018/api/restaurants
+Content-Type: application/json
+{
+      "Name": "Ow",
+      "Description": "A cozy restaurant serving a variety of delicious dishes.",
+      "Category": "Indian",
+      "HasDelivery": true,
+      "ContactEmail": "info@test.com",
+      "ContactNumber": "555-1234",
+      "City": "New York",
+      "Street": "123 Main Street",
+      "PostalCode": "10-010"
+}

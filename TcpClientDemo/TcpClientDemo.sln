@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClientDemo", "TcpClientDemo\TcpClientDemo.csproj", "{6ABD5F6A-F7BE-4923-9674-46701B29B791}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ABD5F6A-F7BE-4923-9674-46701B29B791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABD5F6A-F7BE-4923-9674-46701B29B791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABD5F6A-F7BE-4923-9674-46701B29B791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABD5F6A-F7BE-4923-9674-46701B29B791}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
