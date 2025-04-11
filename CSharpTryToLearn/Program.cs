@@ -2,7 +2,7 @@
 
 namespace CSharpTryToLearn;
 
-class Program
+public static class Program
 {
     
     [AttributeUsage(AttributeTargets.Method)]
@@ -19,8 +19,14 @@ class Program
             .GetTypes()
             .SelectMany(type => type.GetMethods(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic))
             .Where(method => method.GetCustomAttributes(typeof(RunnableEntryAttribute), false).Any());
+
+        var methodInfos = methods as MethodInfo[] ?? methods.ToArray();
+        if (methodInfos.Count() > 1)
+        {
+            throw new ApplicationException("More than one method found");
+        }
         
-        foreach (var method in methods)
+        foreach (var method in methodInfos)
         {
             Console.WriteLine($"Invoking {method.DeclaringType?.Name}.{method.Name}()");
             method.Invoke(null, null);
