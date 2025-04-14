@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <Folder Include="DesignPattern\CreationalPattern\" />
-      <Folder Include="DesignPattern\StructuralPattern\" />
     </ItemGroup>
 
 </Project>
