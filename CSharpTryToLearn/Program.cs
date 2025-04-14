@@ -23,6 +23,10 @@ public static class Program
         var methodInfos = methods as MethodInfo[] ?? methods.ToArray();
         if (methodInfos.Count() > 1)
         {
+            foreach (var methodInfo in methodInfos)
+            {
+                Console.WriteLine($"Invoking {methodInfo.DeclaringType?.Name}.{methodInfo.Name}()");
+            }
             throw new ApplicationException("More than one method found");
         }
         

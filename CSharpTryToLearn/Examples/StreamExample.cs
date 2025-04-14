@@ -3,7 +3,6 @@
 public class StreamExample
 {
 
-    [Program.RunnableEntry]
     public static void Run()
     {
         // using (Stream s = new FileStream("test.txt", FileMode.Create))
